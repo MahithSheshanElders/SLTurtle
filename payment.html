@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Page</title>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<body>
+  <div class="cover-page">
+    <div class="poto">
+      <img src="Image/R1COVER.jpeg">
+      <h1 class="first-txt">BUY TICKET</h1>
+      <h3 class="second-txt">ENJOY LIFE WITH TURTLES</h3>
+
+    </div>
+    <div class="checkout-panel">
+      <div class="panel-body">
+        <h2 class="title">Checkout</h2>
+     
+        <div class="progress-bar">
+          <div class="step active" ></div>
+          <div class="step active"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="content">
+    <h2>Welcome to the Payment page</h2>
+    <p>Please enter your payment details in given field</p>
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="section1">
+      <div class="section2">
+      <h2>Updated Summary Table</h2>
+      <table id="summary-table">
+        <tr>
+          <th>Date</th>
+          <td id="selected-date"></td>
+        </tr>
+        <tr>
+          <th>Time Slot</th>
+          <td id="selected-time-slot"></td>
+        </tr>
+        <tr>
+          <th>Duration</th>
+          <td id="selected-duration"></td>
+        </tr>
+        <tr>
+          <th>Total Payable</th>
+          <td id="total-payable"></td>
+        </tr>
+      </table>
+    </div>
+     
+    <!-- Heading and cover photo -->
+    <h1></h1>
+    
+  
+
+    <div class="container">
+      <form id="paymentForm">  
+        <div class="row">
+          <div class="col">
+            <h3 class="title">Payment
+            </h3>
+   
+            <div class="inputBox">
+      <label for="cardNumber">Card number:</label>
+      <input type="text" id="cardNumber" required placeholder="xxxx xxxx xxxx">
+    </div>
+    <br>
+    <br>
+    <div class="inputBox">
+      <label for="expiryDate">Expiry date:</label>
+      <input type="text" id="expiryDate" required min="2019-11" placeholder="2019-11">
+    </div>
+    <br>
+    <br>
+    
+    <div class="inputBox">
+      <label for="cvc">CVC / CVV:</label>
+      <input type="text" id="cvc" required placeholder="Last 3 digits on back of card"
+      pattern="^[0-9]{3}$" >
+    </div>
+    <br>
+    <br>
+    <div class="inputBox">
+      <label for="nameOnCard">Name on card:</label>
+      <input type="text" id="nameOnCard" required>
+    </div>
+    <br>
+    <br>
+      <button type="submit" id="payButton" disabled>Pay <span id="amount"></span></button>
+    </form>
+
+  
+ 
+
+  <script src="js-files/payment.js"></script>
+</body>
+</html>

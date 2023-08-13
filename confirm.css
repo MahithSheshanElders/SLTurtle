@@ -1,0 +1,290 @@
+.cover-page{
+  width: 100%;
+}
+
+img{
+  width:100%;
+  height: 270px;
+
+}
+
+.first-txt{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#5F7ADB ;
+  position: absolute;
+  top: 80px;
+  left: 40%;
+  font-size: 54px;
+  text-align: center;
+  text-shadow: 5px;
+  
+ 
+}
+
+.second-txt{
+  position: absolute;
+  bottom: 500px;
+  left: 50%;
+  color: #A2B2EE;
+  
+
+}
+
+body{
+  background-color: #24252a;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  
+  color: #fffdfd;
+}
+
+
+
+  .summary{
+    margin-left: 30%;
+    width: 50%;
+    height: 500px;
+    margin-top: 60px;
+      border-width: 5px;
+      border-style: solid;
+      padding: 10px;
+      border-spacing:105px;
+     
+    
+    }
+
+    h2 {
+      margin-top: 20px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      color: #A2B2EE;
+    }
+    
+    table {
+      margin-bottom: 25px;
+      margin-left: 22%;
+      border-collapse: collapse;
+      width: 60%;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    th {
+      color:#5F7ADB ;
+    }
+
+
+    .container1{
+      border-style: solid;
+      width: 70%;
+      margin-left: 18%;
+      margin-top: 40px;
+    }
+
+    .container1 h3{
+      border-style: solid;
+      margin-left: 25%;
+      width: 50%;
+      background-color: #A2B2EE;
+      color: #24252a;
+      border-radius: 15px;
+    }
+
+    .content{
+      margin-top: -500px;
+    
+    }
+    
+    .progress-bar {
+      display: flex;
+      margin-bottom: 50px;
+      justify-content: space-between;
+    }
+    .checkout-panel {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 766px;
+      background-color: #24252a;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+    }
+     
+    .step {
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 25px;
+      height: 25px;
+      margin-bottom: 30px;
+      border: 4px solid #fff;
+      border-radius: 50%;
+      background-color: #efefef;
+    }
+     
+    .step:after {
+      position: absolute;
+      z-index: -1;
+      top: 5px;
+      left: 22px;
+      width: 420px;
+      height: 6px;
+      content: '';
+      background-color: #efefef;
+    }
+     
+    .step:before {
+      color: #414040;
+      position: absolute;
+      top: 40px;
+    }
+     
+    .step:last-child:after {
+      content: none;
+    }
+     
+    .step.active {
+      background-color: #f62f5e;
+    }
+    .step.active:after {
+      background-color: #f62f5e;
+    }
+    .step.active:before {
+      color: #f62f5e;
+    }
+    .step.active + .step {
+      background-color: #f62f5e;
+    }
+    .step.active + .step:before {
+      color: #f62f5e;
+    }
+     
+    .step:nth-child(1):before {
+      color: #f62f5e;
+      right: -10px;
+      content: 'Book';
+    }
+    .step:nth-child(2):before {
+      right: -30px;
+      content: 'Detail';
+    }
+    .step:nth-child(3):before {
+      right: -30px;
+      content: 'Payment';
+    }
+    .step:nth-child(4):before {
+      right: -50px;
+      content: 'Confrimation';
+    }
+    
+    .panel-body {
+      padding: 45px 80px 0;
+      
+    }
+     
+    .title {
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 40px;
+      color: #4f51ba;
+    }
+    
+    .container9{
+      margin-top: -500px;
+      padding-bottom: 50px;
+    }
+
+    .home span{
+      color: #ddd;
+      background-size: auto;
+      margin-bottom: 200px;
+      margin-right: 20px;
+      padding: 10px 25px;
+      background-color: rgba(0,136,169,0.8);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+  
+  }
+    @media screen and (max-width: 768px) {
+      
+    
+      body{
+        
+        padding-bottom: 10px;
+      }
+    
+    
+    .first-txt{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#5F7ADB ;
+    position: absolute;
+    top: 8px;
+    left: 15%;
+    font-size: 54px;
+    text-align: center;
+    text-shadow: 5px;
+    
+    
+    }
+    
+    .second-txt{
+    position: absolute;
+    bottom: 650px;
+    left: 15%;
+    color: #A2B2EE;
+    
+    
+    }
+    
+    .step:after {
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 22px;
+    width: 35px;
+    height: 6px;
+    content: '';
+    background-color: #efefef;
+    }
+    
+    .step:nth-child(1):before {
+    color: #f62f5e;
+    right: -10px;
+    content: 'Book';
+    }
+    .step:nth-child(2):before {
+    right: -10px;
+    content: 'Detail';
+    }
+    .step:nth-child(3):before {
+    right: -30px;
+    content: 'Payment';
+    }
+    .step:nth-child(4):before {
+    right: -80px;
+    content: 'Confrimation';
+    }
+    #summary-table{
+    width: 100%;
+    margin-left: 1px;
+    }
+  .container9{
+    width: 100%;
+  }
+  .container1{
+    width: 100%;
+    margin-left: -10px;
+  }
+  
+  
+  }
+    

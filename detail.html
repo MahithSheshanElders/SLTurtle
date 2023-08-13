@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Your Details</title>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="detail.css">
+  <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+<body>
+  <div class="cover-page">
+    <div class="poto">
+      <img src="Image/R1COVER.jpeg" alt="cover">
+      <h1 class="first-txt">BUY TICKET</h1>
+      <h3 class="second-txt">ENJOY LIFE WITH TURTLES</h3>
+
+    </div>
+    <div class="checkout-panel">
+      <div class="panel-body">
+        <h2 class="title">Checkout</h2>
+     
+        <div class="progress-bar">
+          <div class="step active"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="content">
+    <h2>Welcome to the Detail page</h2>
+    <p>Please enter your details in given field</p>
+  </div>
+  </div>
+  <div class="section1">
+  <div class="section2">
+  <h2>Updated Summary Table</h2>
+  <table id="summary-table">
+    <tr>
+      <th>Date</th>
+      <td id="selected-date"></td>
+    </tr>
+    <tr>
+      <th>Time Slot</th>
+      <td id="selected-time-slot"></td>
+    </tr>
+    <tr>
+      <th>Duration</th>
+      <td id="selected-duration"></td>
+    </tr>
+    <tr>
+      <th>Total Payable</th>
+      <td id="total-payable"></td>
+    </tr>
+  </table>
+</div>
+
+<div class="container">
+  
+  <br><br>
+  <form id="details-form">
+    <div class="row">
+      <div class="col">
+        <h3 class="title">BillIng Address</h3>
+        <div class="inputBox">
+    <label for="slChildInput">Full Name:</label>
+    <input type="text" id="full-name-input" required>
+    </div>
+    <br><br>
+    <div class="inputBox">
+      <div class="numberinput">
+          <p>Mobile number :</p>
+          <input id="mobile-number-input" type="tel" name="phone" />
+        </div>   
+  </div>
+    <br><br>
+    <div class="inputBox">
+    <label for="email-input">Email:</label>
+    <input type="email" id="email-input" required>
+  </div>
+    <br><br>
+    <div class="inputBox">
+    <label for="confirm-email-input">Confirm Email:</label>
+    <input type="email" id="confirm-email-input" required>
+  </div>
+    <br><br>
+    <div class="inputBox">
+    <label for="gender-select">Gender:</label>
+    <select id="gender-select">
+      <option value="">Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+      </div>
+    </div>
+    <br><br>
+    <button type="submit" id="submit-btn" disabled>Submit</button>
+  </form>
+</div>
+</div>
+<script src="js-files/detail.js"></script>
+</body>
+
+
+</html>

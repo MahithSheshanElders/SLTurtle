@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buy Tickets</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="book.css">
+</head>
+<body>
+  <div class="cover-page">
+    <div class="poto">
+      <img src="Image/R1COVER.jpeg" alt="cover">
+      <h1 class="first-txt">BUY TICKET</h1>
+      <h3 class="second-txt">ENJOY LIFE WITH TURTLES</h3>
+
+    </div>
+    <div class="checkout-panel">
+      <div class="panel-body">
+        <h2 class="title">Checkout</h2>
+     
+        <div class="progress-bar">
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="content">
+    <h2>Welcome to the Ticket Booking System</h2>
+    <p>Please select your preferred date, time slot, number of guests, and duration to proceed with the purchase.</p>
+  </div>
+  </div>
+  <div id="dates-section">
+    <h2>Dates</h2>
+    <div id="calendar">
+      <!-- Add calendar component here -->
+      <input type="date" id="date-input">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div id="time-slot-section">
+    <h2>Time Slot</h2>
+    <div id="time-slot-form">
+      <label for="time-slot-select" class="time-slot">Select Time Slot:</label>
+      <select id="time-slot-select">
+        <option value="7-8">07.00 am - 08.00 am</option>
+        <option value="8-9">08.00 am - 09.00 am</option>
+        <option value="9-10">09.00 am - 10.00 am</option>
+        <option value="10-11 (Peak) " selected>10.00 am - 11.00 am (Peak)</option>
+        <option value="11-12 (Peak) " selected>11.00 am - 12.00 am (Peak)</option>
+        <option value="12-13 (Peak) " selected>12.00 am - 1.00 pm (Peak)</option>
+        <option value="13-14" >1.00 pm - 2.00 pm </option>
+        <option value="14-15" >2.00 pm - 3.00 pm </option>
+        <option value="15-16 (Peak) " selected>3.00 pm - 4.00 pm (Peak)</option>
+        <option value="16-17 (Peak) "selected>4.00 pm - 5.00 pm (Peak)</option>
+        <option value="17-18 (Peak)" selected>5.00 pm - 6.00 pm (Peak)</option>
+      </select>
+      <br>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div id="guests-section">
+    <h2>Guests</h2>
+    <div id="guests-form">
+      <br>
+      <label for="sl-adult-input">SL Adult:</label>
+      <input type="number" id="sl-adult-input" min="0">
+      <br><br>
+
+      <label for="sl-child-input">SL Child:</label>
+      <input type="number" id="sl-child-input" min="0">
+      <br><br>
+      <label for="foreigner-adult-input">Foreigner Adult:</label>
+      <input type="number" id="foreigner-adult-input" min="0">
+      <br><br>
+      <label for="foreigner-child-input">Foreigner Child:</label>
+      <input type="number" id="foreigner-child-input" min="0">
+      <br><br>
+      <label for="infant-input">Infant:</label>
+      <input type="number" id="infant-input" min="0">
+    </div><br><br>
+  </div>
+  <div id="duration-section">
+    <h2>Duration</h2>
+    <div id="duration-form">
+      <label for="duration-select" class="slp">Select Duration:</label>
+      <select id="duration-select">
+        <option value="1">1 hour</option>
+        <option value="2">2 hours</option>
+        <option value="3">3 hours</option>
+      </select>
+    </div>
+    <br><br>
+    </div>
+    <table id="summary-table">
+      
+      <tr>
+        <th>Date</th>
+        <td id="selectedDate" ></td>
+      </tr>
+      <tr>
+        <th>Time Slot</th>
+        <td id="selected-time-slot"></td>
+      </tr>
+      <tr>
+        <th>Duration</th>
+        <td id="duration-details"></td>
+      </tr>
+      <tr></tr>
+      <tr>
+        <th>Tickets</th>
+        <td id="guests-summary"></td>
+      </tr>
+      <tr>
+        <th>Total Payable</th>
+        <td id="totalPayable "></td>
+      </tr>
+    </table>
+  
+  <br>
+  <br>
+  <button id="continue-btn" disabled>Continue with purchase</button>
+  <script src="js-files/ticket.js"></script>
+</body>
+</html>
